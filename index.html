@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- <!DOCTYPE html>: Declares the document type and version of HTML being used -->
+<html lang="en"> <!-- <html lang="en">: Defines the HTML document with the "en" language attribute. -->
+<head> <!-- <head>: Contains metadata and links to external resources. -->
+    <!-- <meta>: Provides metadata about the document, such as character encoding and viewport settings. -->
+    <meta charset="UTF-8">
+        <!-- <meta charset="UTF-8">: This <meta> tag specifies the character encoding of the document. In this case, it's set to "UTF-8," which is a character encoding that supports a wide range of characters from various languages and symbol sets, making it suitable for internationalization and multilingual content. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">: This <meta> tag is used to set the compatibility mode for Internet Explorer (IE). The http-equiv attribute is set to "X-UA-Compatible," and the content attribute is set to "IE=edge." This combination instructs IE to use the latest rendering engine available, ensuring that the web page is displayed in the most up-to-date and standards-compliant way. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">: This <meta> tag is crucial for responsive web design and controlling how the web page is displayed on different devices. It configures the viewport settings.
+    name="viewport" indicates that this <meta> tag is related to the viewport.
+    content="width=device-width, initial-scale=1.0" sets the following properties:
+    width=device-width: Ensures that the width of the viewport matches the width of the device's screen.
+    initial-scale=1.0: Sets the initial zoom level to 1.0, meaning that the web page is displayed at its actual size when first loaded. -->
+    <title>MelodyMosaic</title> <!-- <title>: Sets the title of the web page. -->
+    <link rel="stylesheet" href="style.css"> <!-- <link>: Links an external CSS file (style.css) to the HTML document. -->
+</head>
+<body> <!-- <body>: Contains the visible content of the web page. -->
+    <nav> <!-- <nav>: Defines a navigation bar. -->
+        <ul><!-- <ul>: Represents an unordered list. -->
+            <li class="brand"><img src="logo.png" alt="MelodyMosaic">MelodyMosaic</li> <!-- <li>: Represents list items. -->
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container"> <!-- <div class="container">: Defines a container for the main content. -->
+        <div class="songList">
+            <h1>Best of NCS - No Copyright Sounds</h1> <!-- <h1>: Defines a top-level heading. -->
+            <div class="songItemContainer"> <!-- <div class="songItemContainer">: Contains a list of individual song items. -->
+                <div class="songItem"> <!-- <div class="songItem">: Represents an individual song item. -->
+                    <!-- <img>, <span>, <i>: Elements for displaying song details like name, timestamp, and play button. -->
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">05:17 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="2">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:23 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="3">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:53 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="4">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:49 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="5">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">03:17 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="6">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:20 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="7">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">03:42 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="8">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:22 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="9">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">03:54 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="10">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">03:28 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100"> <!-- <input type="range">: A range input used for the music player progress bar. -->
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Telugu Melodious Songs</span>
+        </div>
+    </div>
+    <!-- JavaScript files: Links to external JavaScript files (script.js) and the Font Awesome icon library. --->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4413457658.js" crossorigin="anonymous"></script>">
+</body>
+</html>

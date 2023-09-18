@@ -1,0 +1,237 @@
+/*
+@import Statements:
+These statements are used to import external fonts from Google Fonts. They import the "Ubuntu" and "Varela Round" fonts and make them available for use in your web page.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*
+body:
+background-color: antiquewhite;: Sets the background color of the entire web page to antique white.
+*/
+body{
+    background-color: antiquewhite;
+}
+
+/*
+*:
+margin: 0; padding: 0;: Resets the margin and padding of all elements to zero. This is a common practice to achieve consistent spacing and alignment across different browsers.
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+nav:
+font-family: 'Ubuntu', sans-serif;: Specifies the font family for text within the <nav> element. It sets "Ubuntu" as the preferred font, falling back to a generic sans-serif font if "Ubuntu" is not available.
+*/
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*
+nav ul:
+display: flex;: Makes the list inside the navigation (<nav>) element a flex container, allowing you to create a horizontal list of navigation items.
+*/
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+/*
+nav ul li:
+padding: 0 12px;: Adds horizontal padding to the list items in the navigation. This creates space between the navigation items.
+*/
+nav ul li{
+    padding: 0 12px ;
+}
+
+/*
+.brand img:
+width: 44px; padding: 0 8px;: Styles the brand/logo image within the navigation. It sets the width of the image and adds some horizontal padding.
+*/
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+/*
+.brand:
+display: flex; align-items: center;: Styles the brand text within the navigation. It makes the text centered vertically and horizontally within its container.
+*/
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/*
+.container:
+min-height: 72vh;: Sets the minimum height of the container to 72% of the viewport height, ensuring that it takes up a significant portion of the screen.
+background-color: black; color: white;: Sets the background color to black and text color to white within the container.
+font-family: 'Varela Round', sans-serif;: Specifies the font family for text inside the container, favoring "Varela Round" and falling back to a generic sans-serif font.
+display: flex;: Makes the container a flex container, allowing for flexible layout options.
+margin: 23px auto;: Sets margins around the container, with auto on the left and right, centering it horizontally.
+width: 70%;: Sets the width of the container to 70% of its parent container's width.
+border-radius: 12px;: Adds rounded corners (border radius) to the container, giving it a visual effect.
+padding: 34px;: Adds padding inside the container to space out its contents.
+background-image: url('bg.jpg');: Sets a background image for the container using the 'bg.jpg' file.
+*/
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.png');
+}
+
+/*
+.bottom:
+position: sticky; bottom: 0;: Makes the container sticky at the bottom of the viewport, keeping it visible even when scrolling.
+height: 130px;: Sets the height of the bottom section.
+background-color: black; color: white;: Defines the background color and text color for this section.
+display: flex; justify-content: center; align-items: center; flex-direction: column;: Styles the container's contents as a centered column with flex layout.
+*/
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+.icons:
+margin-top: 14px;: Adds top margin to the icons, spacing them from the content above.
+*/
+.icons{
+    margin-top: 14px;
+}
+
+/*
+.icons i:
+cursor: pointer;: Changes the cursor to a pointer when hovering over icons, indicating that they are clickable.
+*/
+.icons i{
+    cursor: pointer;
+}
+
+/*
+#myProgressBar:
+width: 80vw;: Sets the width of the progress bar to 80% of the viewport width.
+cursor: pointer;: Change
+*/
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+/*
+.songItemContainer:
+margin-top: 74px;: Adds top margin to the song item container, spacing it from the content above.
+*/
+.songItemContainer{
+    margin-top: 74px;
+}
+
+/*
+.songItem:
+height: 50px;: Sets the height of each song item to 50 pixels.
+display: flex;: Turns the song item into a flex container, allowing for easy alignment of its child elements.
+background-color: white;: Sets the background color of each song item to white, giving it a white background.
+color: black;: Sets the text color of the song item to black, making the text readable against the white background.
+margin: 12px 0;: Adds a top and bottom margin of 12 pixels and no left/right margin, creating space between adjacent song items.
+justify-content: space-between;: Distributes the child elements horizontally with space between them, pushing the elements to the left and right edges of the song item.
+align-items: center;: Centers the child elements vertically within the song item, ensuring they are vertically aligned.
+border-radius: 34px;: Applies a border-radius of 34 pixels to the song item, giving it rounded corners for a visually pleasing effect.
+*/
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+/*
+.songItem img:
+This style targets the images inside each song item.
+width: 30px;: Sets the width of each song item's image to 30 pixels.
+margin: 0 23px;: Adds a left and right margin of 23 pixels to the image, creating space around it.
+border-radius: 34px;: Applies a border-radius of 34 pixels to the image, giving it rounded corners for a visually appealing effect. This rounding effect is typically used for circular or rounded images.
+*/
+.songItem img{
+    width: 30px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+/*
+.timestamp:
+This style is applied to the timestamp section of each song item.
+margin: 0 23px;: Adds a left and right margin of 23 pixels to the timestamp, creating space around it. This margin separates the timestamp from other elements within the song item.
+*/
+.timestamp{
+    margin: 0 23px;
+}
+
+/*
+.timestamp i:
+This style targets the play icons (<i>) within the timestamp section of each song item.
+cursor: pointer;: Changes the cursor to a pointer when hovering over these play icons. This indicates to users that the play icons are clickable or interactive.
+*/
+.timestamp i{
+    cursor: pointer;
+}
+
+/*
+.songInfo:
+This style is applied to the song information section.
+position: absolute;: Positions the song information section absolutely within its containing element. This allows you to specify its exact location.
+left: 10vw;: Places the song information section 10% of the viewport width from the left edge of its containing element.
+font-family: 'Varela Round', sans-serif;: Specifies the font family for text within the song information section. It prefers the "Varela Round" font but falls back to a generic sans-serif font if "Varela Round" is not available.
+*/
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*
+.songInfo img:
+This style targets the image within the song information section.
+opacity: 0;: Sets the initial opacity of the image to 0, making it initially invisible.
+transition: opacity 0.4s ease-in;: Adds a transition effect to the opacity property, making the image fade in or out smoothly over 0.4 seconds with an ease-in easing function. This transition is often used to create subtle animation effects when an element's properties change.
+*/
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+/*
+@media only screen and (max-width: 1100px): This defines a media query that targets screens (typically used for responsive design) and specifies that the following styles will apply only if the screen's maximum width is 1100 pixels or less.
+body { background-color: red; }: Within the media query, it changes the background color of the body element to red. This means that if the screen width is 1100 pixels or less, the background color of the entire web page will turn red.
+*/
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: red;
+    }
+}
